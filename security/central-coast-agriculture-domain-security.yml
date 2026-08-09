@@ -1,0 +1,33 @@
+generated: '2026-08-09'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.ccagriculture.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 13 21:48:17 2026 GMT
+  hsts: false
+- host: rawgarden.farm
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov  1 16:00:59 2026 GMT
+  hsts: false
+  note: >-
+    Consumer brand host (Raw Garden). Origin is fronted by Cloudflare and answered
+    HTTP 403 (bot challenge) to the probe, so response headers could not be observed
+    beyond the TLS handshake.
+domains:
+- domain: ccagriculture.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+- domain: rawgarden.farm
+  dnssec: true
+  caa: []
+  spf: true
+  spf_record: v=spf1 a mx include:_spf.google.com include:_spf.zendesk.com include:_spf.mlsend.com ~all
+  dmarc: true
+  dmarc_policy: none
+  dmarc_rua: mailto:s-user@ccagriculture.com
