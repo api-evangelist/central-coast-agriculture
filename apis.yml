@@ -10,6 +10,17 @@ description: 'Central Coast Agriculture, Inc. (CCA) is a vertically integrated C
   a consumer brand site and a wholesale ordering page, but no public API, developer
   portal, SDK or machine-readable specification of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/central-coast-agriculture/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://www.ccagriculture.com/files/mask-group-622x_53254.png
 x-type: company
 x-source: harvest:secondary-market
